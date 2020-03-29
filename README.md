@@ -48,7 +48,7 @@ Open Eclipse at `myproject`
 
 Maven Projects
 
-* Root directory: `/Users/jv/Desktop/MyDevelopment/github/projects/springboot-heroku/springboot-heroku`
+* Root directory: `/Users/jv/Desktop/MyDevelopment/github/projects-heroku/myproject/myproject-eclipse`
 
 Select Finish
 
@@ -56,10 +56,10 @@ Maven Project is Imported.
 
 ### Code
 
-`SpringbootHerokuApplication.java`
+`MyprojectApplication.java`
 
 ```
-package io.johnvincent.springbootheroku;
+package io.johnvincent.myproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -68,7 +68,7 @@ import org.springframework.stereotype.*;
 
 @Controller
 @SpringBootApplication
-public class SpringbootHerokuApplication {
+public class MyprojectApplication {
 
     @RequestMapping("/")
     @ResponseBody
@@ -76,9 +76,10 @@ public class SpringbootHerokuApplication {
       return "Hello World!";
     }
 
-    public static void main(String[] args) {
-        SpringApplication.run(SpringbootHerokuApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(MyprojectApplication.class, args);
+	}
+
 }
 ```
 

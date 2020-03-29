@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# script to create Heroku ready SpringBoot app
+#
+HEROKU_DIR="/Users/jv/Desktop/MyDevelopment/github/projects-heroku/myproject/myproject-heroku"
+CURR_DIR=`pwd`
+#
+echo " "
+echo "Script to copy SpringBoot app files to Heroku project"
+echo " "
+echo "Current directory: $CURR_DIR"
+echo " Heroku directory: $HEROKU_DIR"
+echo " "
+#
+echo "Maven clean and make the package"
+./mvnw clean package
+#
+echo "Copying SpringBoot app files"
+cp -r src $HEROKU_DIR
+cp -r target $HEROKU_DIR
+cp pom.xml $HEROKU_DIR
+cp mvnw $HEROKU_DIR
+#
+echo " "
+echo "Completed"

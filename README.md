@@ -100,7 +100,7 @@ git push
 ### Execute
 
 ```
-cd /Users/jv/Desktop/MyDevelopment/github/projects/springboot-heroku/springboot-heroku
+cd /Users/jv/Desktop/MyDevelopment/github/projects-heroku/myproject/myproject-eclipse/myproject
 
 ./mvnw spring-boot:run
 ```
@@ -129,7 +129,7 @@ echo "Maven clean and make the package"
 ./mvnw clean package
 
 echo "Save Jar"
-cp target/springboot-heroku-0.0.1-SNAPSHOT.jar ../springboot-heroku.jar
+cp target/myproject-0.0.1-SNAPSHOT.jar ../myproject.jar
 
 echo "Completed"
 ```
@@ -137,7 +137,7 @@ echo "Completed"
 ### Build Jar file
 
 ```
-cd /Users/jv/Desktop/MyDevelopment/github/projects/springboot-heroku/springboot-heroku
+/Users/jv/Desktop/MyDevelopment/github/projects-heroku/myproject/myproject-eclipse/myproject
 
 ./create-package
 ```
@@ -145,9 +145,9 @@ cd /Users/jv/Desktop/MyDevelopment/github/projects/springboot-heroku/springboot-
 ### Execute Jar file
 
 ```
-cd /Users/jv/Desktop/MyDevelopment/github/projects/springboot-heroku
+cd /Users/jv/Desktop/MyDevelopment/github/projects-heroku/myproject/myproject-eclipse
 
-java -jar springboot-heroku.jar
+java -jar myproject.jar
 ```
 
 ### Test

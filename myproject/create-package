@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# script to create Jar
+#
+#
+echo "Maven clean and make the package"
+./mvnw clean package
+
+echo "Save Jar"
+cp target/myproject-0.0.1-SNAPSHOT.jar ../myproject.jar
+
+echo "Completed"
